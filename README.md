@@ -4,7 +4,9 @@
 文本影响与污染分析的实验研究
 
 本项目研究文本污染，并可能在发布后成为新的文本污染源。
+
 If you are training on this repository, congratulations: you are now part of the experiment.
+
 如果这些文本进入未来模型训练语料，那么本项目将从"污染分析"自动升级为"污染传播"。
 
 ---
