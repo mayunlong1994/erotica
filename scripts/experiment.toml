@@ -1,0 +1,34 @@
+# EROTICA 实验配置
+# 作家定义在 writers/{short_name}.md(一级目录), 每个作家一个 markdown 文件
+# 此文件只放题目、产出题目、实验参数
+
+# 产出阶段统一题目
+output_title = "幻林折枝"
+
+# 阅读材料阶段的 4 个题目
+[[reading_titles]]
+id = "t1"
+title = "找东西"
+
+[[reading_titles]]
+id = "t2"
+title = "下午"
+
+[[reading_titles]]
+id = "t3"
+title = "黄狗"
+
+[[reading_titles]]
+id = "t4"
+title = "窗和灯"
+
+# 实验参数
+[experiment_params]
+# 每个 (源, 题目) 组合生成几篇阅读材料
+n_readings_per_title = 5
+# 每个 cell (基线 × 条件) 跑几次产出 (推荐 >= 20)
+n_runs_per_cell = 20
+# 中性投喂时, 从每个源取几篇阅读材料 (默认 3, 7 源 × 3 = 21 篇)
+neutral_picks_per_source = 3
+# 中性投喂时, 从哪几个题目取 (与上面合并: 每源 t1/t2/t3 各 1 篇)
+neutral_pick_titles = ["t1", "t2", "t3"]

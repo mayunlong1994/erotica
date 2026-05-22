@@ -1,0 +1,38 @@
+# 早期实验产物,不进入正式数据集
+archive/
+soul/
+
+# Claude Code 本地配置
+.claude/
+
+# v2 目录:只挡内嵌白洁原文的 prompt;干净 AI 产物(v2_test/outputs/)放出
+v2_test/prompts/*读白洁*.txt
+
+# Python 缓存
+__pycache__/
+*.pyc
+scripts/__pycache__/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器临时文件
+*.swp
+*~
+
+# === Phase 2 真人源:版权 + 原文,不上传(只发布方法与 AI 产物) ===
+# 电子书原件 + 抽取的全文(整本盗版情色小说,版权雷)
+origins/
+# 真人源阅读材料(原文重切块, 含原版与脱敏档)
+readings/白洁*/
+readings/斗破*/
+# 内嵌真人原文的 prompt(每个含 20 段原文)
+prompts/*读白洁*.txt
+prompts/*读斗破*.txt
+# 句级切分 / 标注中间产物(sentences/对照/顺读 含全文)
+data_work/
+
+# 恢复用临时物(USN 日志 200MB + 回收站捞回的中间版本),不上传
+usn_dump.txt
+精选集_恢复/
